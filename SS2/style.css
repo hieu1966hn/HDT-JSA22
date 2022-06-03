@@ -12,3 +12,42 @@
   margin: 0px auto;
   /*    tren/duoi  trai/phai */
 }
+
+.home-menu {
+  background-image: url(./image/hero.jpg);
+  background-size: cover;
+  height: 700px;
+}
+
+nav {
+  margin-left: 10%;
+}
+
+nav .max-width {
+  /* Hiểu là gì?
+  Chỉ style cho thẻ có class .max-width là con/cháu/chắt của thẻ nav
+  */
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+}
+
+
+nav .menu li {
+  list-style: none;
+  display: inline-block;
+  padding: 0px 30px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* style logo */
+.max-width .logo img {
+  width: 80px;
+  height: 80px;
+}
+
+.max-width .menu {
+  width: 800px;
+  line-height: 80px;
+}
