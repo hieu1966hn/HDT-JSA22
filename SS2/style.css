@@ -165,3 +165,36 @@ nav .menu li {
   line-height: 30px;
   font-weight: 200;
 }
+
+.content-boxes {
+  display: flex;
+  margin: 0px auto;
+  margin-top: 30px;
+  justify-content: space-between;
+
+  width: 1100px;
+}
+
+.content-boxes .content-box {
+  width: 250px;
+  height: fit-content;
+}
+
+.content-boxes .content-box i {
+  color: orange;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.content-boxes .content-box p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  /* line-height: 30px; */
+  font-weight: 100;
+
+}
+
+.content-boxes .content-box .title {
+  font-size: 20px;
+  line-height: 40px;
+}
