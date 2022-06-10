@@ -198,3 +198,22 @@ nav .menu li {
   font-size: 20px;
   line-height: 40px;
 }
+
+
+/* Home Banner */
+.home-banner {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-banner .banner-image {
+  width: 25%;
+  height: 275px;
+}
+
+.home-banner .banner-image img {
+  width: 100%;
+  height: 275px;
+}
