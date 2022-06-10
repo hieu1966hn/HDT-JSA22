@@ -5,6 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* phần style chung */
+
 .max-width {
   max-width: 1300px;
   /* witdth <= 1300px */
@@ -12,6 +14,23 @@
   margin: 0px auto;
   /*    tren/duoi  trai/phai */
 }
+
+.max-width .title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.orange-bar {
+  width: 100px;
+  height: 2px;
+  background-color: orange;
+  margin-top: 30px;
+}
+
+
+/* Hết phần style chung */
 
 .home-menu {
   background-image: url(./image/hero.jpg);
@@ -22,6 +41,7 @@
   /* Tạo mốc cho position */
 
 }
+
 
 nav {
   margin-left: 10%;
@@ -124,4 +144,24 @@ nav .menu li {
 #button2 {
   background: transparent;
   color: orange;
+}
+
+
+/* Home Content */
+.home-content .max-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.max-width .about {
+  margin-top: 30px;
+}
+
+.about p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
 }
