@@ -14,7 +14,7 @@
 
 /////// Bài 2
 
-const h1 = document.getElementById("header");// Câu lệnh lấy ra thẻ nào có id là ... và gán vào biến h1
+// const h1 = document.getElementById("header");// Câu lệnh lấy ra thẻ nào có id là ... và gán vào biến h1
 
 
 /*
@@ -24,13 +24,29 @@ Phương thức: TenThe.addEventListener("sự kiện", function(){
 
 */
 // Đổi màu chữ thẻ khi hover vào
-h1.addEventListener("mouseover", function () {
-  h1.style.color = "red";
-})
+// h1.addEventListener("mouseover", function () {
+//   h1.style.color = "red";
+// })
 
 
-// Trả về màu chữ nguyên vẹn khi di chuột ra
-h1.addEventListener("mouseleave", function () {
-  h1.style.color = "black";
-})
+// // Trả về màu chữ nguyên vẹn khi di chuột ra
+// h1.addEventListener("mouseleave", function () {
+//   h1.style.color = "black";
+// })
 
+
+
+//////// Bài 03
+
+function numberOneTriangle() {
+  // hàng tăng dần từ 1 -> 5
+  for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= i; j++) {
+      document.write("1")
+    }
+    document.write("</br>");
+  }
+}
+
+
+numberOneTriangle();
