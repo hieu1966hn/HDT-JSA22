@@ -14,7 +14,7 @@
 
 /////// Bài 2
 
-// const h1 = document.getElementById("header");// Câu lệnh lấy ra thẻ nào có id là ... và gán vào biến h1
+const h1 = document.getElementById("header");// Câu lệnh lấy ra thẻ nào có id là ... và gán vào biến h1
 
 
 /*
@@ -76,11 +76,20 @@ Mô tả:
 
 
 ///// Bài 4:
-let hour = new Date();
-console.log(hour.getHours());
-let minute = new Date();
-console.log(minute.getMinutes());
-let second = new Date();
-console.log(second.getSeconds());
 
-document.write(hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds())
+function getRealTime() {
+  let hour = new Date();
+  console.log(hour.getHours());
+  let minute = new Date();
+  console.log(minute.getMinutes());
+  let second = new Date();
+  console.log(second.getSeconds());
+
+  // document.write(hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds())
+  // document.write("</br>")
+
+  h1.innerText = hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds()
+}
+
+// Gọi lại hàm sau mỗi 1000ms = 1s
+setInterval(getRealTime, 1000);
