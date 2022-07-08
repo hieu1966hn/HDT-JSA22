@@ -12,3 +12,25 @@
 // findEven(6); // 0, 2,4,6
 
 
+/////// Bài 2
+
+const h1 = document.getElementById("header");// Câu lệnh lấy ra thẻ nào có id là ... và gán vào biến h1
+
+
+/*
+Phương thức: TenThe.addEventListener("sự kiện", function(){
+  /// hành động tương ứng......
+})
+
+*/
+// Đổi màu chữ thẻ khi hover vào
+h1.addEventListener("mouseover", function () {
+  h1.style.color = "red";
+})
+
+
+// Trả về màu chữ nguyên vẹn khi di chuột ra
+h1.addEventListener("mouseleave", function () {
+  h1.style.color = "black";
+})
+
