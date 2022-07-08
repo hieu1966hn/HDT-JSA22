@@ -77,19 +77,19 @@ Mô tả:
 
 ///// Bài 4:
 
-function getRealTime() {
-  let hour = new Date();
-  console.log(hour.getHours());
-  let minute = new Date();
-  console.log(minute.getMinutes());
-  let second = new Date();
-  console.log(second.getSeconds());
+// function getRealTime() {
+//   let hour = new Date();
+//   console.log(hour.getHours());
+//   let minute = new Date();
+//   console.log(minute.getMinutes());
+//   let second = new Date();
+//   console.log(second.getSeconds());
 
-  // document.write(hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds())
-  // document.write("</br>")
+//   // document.write(hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds())
+//   // document.write("</br>")
 
-  h1.innerText = hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds()
-}
+//   h1.innerText = hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds()
+// }
 
-// Gọi lại hàm sau mỗi 1000ms = 1s
-setInterval(getRealTime, 1000);
+// // Gọi lại hàm sau mỗi 1000ms = 1s
+// setInterval(getRealTime, 1000);
