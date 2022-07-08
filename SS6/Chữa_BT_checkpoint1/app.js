@@ -38,15 +38,36 @@ Phương thức: TenThe.addEventListener("sự kiện", function(){
 
 //////// Bài 03
 
-function numberOneTriangle() {
-  // hàng tăng dần từ 1 -> 5
-  for (let i = 1; i <= 5; i++) {
-    for (let j = 1; j <= i; j++) {
-      document.write("1")
-    }
-    document.write("</br>");
-  }
+// function numberOneTriangle() {
+//   // hàng tăng dần từ 1 -> 5
+//   for (let i = 1; i <= 5; i++) {
+//     for (let j = 1; j <= i; j++) {
+//       document.write("1")
+//     }
+//     document.write("</br>");
+//   }
+// }
+
+
+// numberOneTriangle();
+
+
+/*
+for( box1, box2, box3){
+  // coder ...
 }
 
+Mô tả:
+- box1; nơi truyền vào giá trị ban đầu (option)_ và chỉ chạy trong lần lặp đầu tiên
+- box2: Nơi nhập vào điều kiện dừng của vòng lặp (bắt buộc)
+- box3: Nơi nhập vào câu lệnh thực hiện cuối cùng của vòng lặp
+*/
 
-numberOneTriangle();
+for (let i = 0; i <= 10; i++) {
+  //  Code bên trong for
+  console.log(i);
+}
+
+// Hiển dự đoán kết quả là gì?
+// Lần lặp đầu tiên: Khai báo biến i =0 -> Kiểm tra điều kiện (Đ)-> chạy code bên trong for -> chạy câu lệnh ở box3 -> quay lại bước kiểm tra điều kiện
+                                         // (S) -> Kết thúc vòng lặp
