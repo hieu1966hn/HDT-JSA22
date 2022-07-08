@@ -63,11 +63,24 @@ Mô tả:
 - box3: Nơi nhập vào câu lệnh thực hiện cuối cùng của vòng lặp
 */
 
-for (let i = 0; i <= 10; i++) {
-  //  Code bên trong for
-  console.log(i);
-}
+// for (let i = 0; i <= 10; i++) {
+//   //  Code bên trong for
+//   console.log(i);
+// }
 
 // Hiển dự đoán kết quả là gì?
 // Lần lặp đầu tiên: Khai báo biến i =0 -> Kiểm tra điều kiện (Đ)-> chạy code bên trong for -> chạy câu lệnh ở box3 -> quay lại bước kiểm tra điều kiện
-                                         // (S) -> Kết thúc vòng lặp
+// (S) -> Kết thúc vòng lặp
+
+
+
+
+///// Bài 4:
+let hour = new Date();
+console.log(hour.getHours());
+let minute = new Date();
+console.log(minute.getMinutes());
+let second = new Date();
+console.log(second.getSeconds());
+
+document.write(hour.getHours() + ":" + minute.getMinutes() + ":" + second.getSeconds())
