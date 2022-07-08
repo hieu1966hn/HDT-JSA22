@@ -5,6 +5,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* phần style chung */
+
 .max-width {
   max-width: 1300px;
   /* witdth <= 1300px */
@@ -12,6 +14,23 @@
   margin: 0px auto;
   /*    tren/duoi  trai/phai */
 }
+
+.max-width .title {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 100;
+}
+
+.orange-bar {
+  width: 100px;
+  height: 2px;
+  background-color: orange;
+  margin-top: 30px;
+}
+
+
+/* Hết phần style chung */
 
 .home-menu {
   background-image: url(./image/hero.jpg);
@@ -22,6 +41,7 @@
   /* Tạo mốc cho position */
 
 }
+
 
 nav {
   margin-left: 10%;
@@ -124,4 +144,138 @@ nav .menu li {
 #button2 {
   background: transparent;
   color: orange;
+}
+
+
+/* Home Content */
+.home-content .max-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.max-width .about {
+  margin-top: 30px;
+}
+
+.about p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 200;
+}
+
+.content-boxes {
+  display: flex;
+  margin: 0px auto;
+  margin-top: 30px;
+  justify-content: space-between;
+
+  width: 1100px;
+}
+
+.content-boxes .content-box {
+  width: 250px;
+  height: fit-content;
+}
+
+.content-boxes .content-box i {
+  color: orange;
+  font-size: 50px;
+  line-height: 70px;
+}
+
+.content-boxes .content-box p {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 15px;
+  /* line-height: 30px; */
+  font-weight: 100;
+
+}
+
+.content-boxes .content-box .title {
+  font-size: 20px;
+  line-height: 40px;
+}
+
+
+/* Home Banner */
+.home-banner {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.home-banner .banner-image {
+  width: 25%;
+  height: 275px;
+}
+
+.home-banner .banner-image img {
+  width: 100%;
+  height: 275px;
+}
+
+
+/* Content Guidance */
+
+.content-guidance {
+  width: 100%;
+  height: 700px;
+  background-color: rgb(240, 240, 240);
+}
+
+.content-guidance .max-width {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.guidance {
+  width: 800px;
+  height: fit-content;
+  margin: 0px auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.content-guidance .guidance img {
+  width: 200px;
+  height: 410px;
+}
+
+.guidance .steps {
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.steps .step {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;
+  height: 100px;
+}
+
+.steps .step i {
+  color: orange;
+  font-size: 50px;
+}
+
+.steps .step p {
+  font-family: 'Times New Roman', Times, serif;
+  margin-left: 20px;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 50px;
+}
+
+.steps .download img {
+  width: 160px;
+  height: 50px;
 }
