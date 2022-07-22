@@ -61,3 +61,8 @@ function foo3(a, b) {
   let m = a + b * 100
   return m;
 }
+
+const foo_3 = (a, b) => {
+  let m = a + b * 100
+  return m;
+}
