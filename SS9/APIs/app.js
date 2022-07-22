@@ -35,13 +35,33 @@ for (let i = 0; i < POKEMONNAME.length; i++) {
           const effect = ability.effect_entries[1].effect
 
           container.innerHTML = `
-          
-          `
-        })
+          <div class="flip-card">
+      <div class="flip-card-inner">
+        <div class="flip-card-front">
+          <img src=${imageUrl} alt="Avatar" style="width: 280px; height: 280px;">
+        </div>
 
+        <div class="flip-card-back" style="color: black; padding:0px 24px;">
+          <div style="display:flex; justify-content: space-between; align-items: center;">
+            <h3>${POKEMONNAME}</h3>
+            <div style="display: flex; align-items: center;">
+              <img src="" alt="not found" width="30px" height="30px" style="border-radius: 50%;">
+              <span>Electric</span>
+            </div>
 
-
+          </div>
+          <p>${effect}</p>
+          <p></p>
+        </div>
+      </div>
+    </div>
+          `;
+        });
     })
+    .catch((err) => {
+      console.log(err);
+    })
+
 }
 
 
